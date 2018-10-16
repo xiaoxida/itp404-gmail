@@ -1,0 +1,9 @@
+<button type="button" onclick={{action "back"}}>Back</button>
+<button type="button" onclick={{action "deleteEmail" model}}><img src="https://png.icons8.com/metro/1600/delete.png" width=15 height=15></button>
+<ul>
+  <li>ID: {{model.id}}</li>
+  <li>From: {{model.from}}</li>
+  <li>To: {{model.to}}</li>
+  <li>Subject: {{model.subject}}</li>
+  <li>Message: {{model.message}}</li>
+</ul>
