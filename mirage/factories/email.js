@@ -1,4 +1,4 @@
-import { Factory } from 'ember-cli-mirage';
+import { Factory, faker } from 'ember-cli-mirage';
 
 export default Factory.extend({
   id(i) {
@@ -15,5 +15,5 @@ export default Factory.extend({
   },
   message() {
     return faker.lorem.paragraphs();
-  }
+  },
 });

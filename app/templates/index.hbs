@@ -1,14 +1,18 @@
+<h2>Starred Emails:</h2>
 <ul>
   {{#each model as |email|}}
-    <li>
-      {{#link-to "detail" email.id}}
-        {{email.from}}
-      {{/link-to}}
-      <br/>
-      <p style="width: 250px; white-space: nowrap; overflow: hidden;text-overflow: ellipsis;">
-        {{email.message}}
-      </p>
-    </li>
+    {{#if email.isStarred}}
+      <DisplayStar @email = {{email}}/>
+      <br>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>All Emails:</h2>
+<ul>
+  {{#each model as |email|}}
+    <DisplayStar @email = {{email}}/>
+    <br>
   {{/each}}
 </ul>
 
