@@ -16,7 +16,7 @@
 
   <label for="message">Message: </label>
   <div>
-    {{textarea rows="8" cols="80" value=message}}
+    {{textarea id="message" rows="8" cols="80" value=message}}
   </div>
-  <button type="submit">Send</button>
+  <button data-test="submit" type="submit">Send</button>
 </form>

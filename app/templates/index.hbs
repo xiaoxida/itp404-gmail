@@ -2,17 +2,19 @@
 <ul>
   {{#each model as |email|}}
     {{#if email.isStarred}}
-      <DisplayStar @email = {{email}}/>
+      <DisplayStar data-test="starred" @email = {{email}}/>
       <br>
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>All Emails:</h2>
+<h2>UnStarred Emails:</h2>
 <ul>
   {{#each model as |email|}}
-    <DisplayStar @email = {{email}}/>
-    <br>
+    {{#unless email.isStarred}}
+      <DisplayStar data-test="nostar" @email = {{email}}/>
+      <br>
+    {{/unless}}
   {{/each}}
 </ul>
 

@@ -1,12 +1,12 @@
 <button type="button" onclick={{action "back"}}>Back</button>
-<button type="button" onclick={{action "deleteEmail" model}}>
+<button data-test="delete-email" type="button" onclick={{action "deleteEmail" model}}>
   <img src="https://png.icons8.com/metro/1600/delete.png" width="15" height="15" />
 </button>
 <ul>
-  <li>{{model.isStarred}}</li>
-  <li>ID: {{model.id}}</li>
-  <li>From: {{model.from}}</li>
-  <li>To: {{model.to}}</li>
-  <li>Subject: {{model.subject}}</li>
-  <li>Message: {{model.message}}</li>
+  <li data-test="email-star">{{model.isStarred}}</li>
+  <li data-test="email-id">ID: {{model.id}}</li>
+  <li data-test="email-from">From: {{model.from}}</li>
+  <li data-test="email-to">To: {{model.to}}</li>
+  <li data-test="email-subject">Subject: {{model.subject}}</li>
+  <li data-test="email-message">Message: {{model.message}}</li>
 </ul>

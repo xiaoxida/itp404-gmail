@@ -1,7 +1,7 @@
 <button type="button" onclick={{action "toggle"}}>
 {{#if @starred}}
-  <img src="/star-filled.png" width="20" height="20"/>
+  <img data-test="star_image" src="/star-filled.png" width="20" height="20"/>
 {{else}}
-  <img src="/star-empty.png" width="20" height="20"/>
+  <img data-test="star_image" src="/star-empty.png" width="20" height="20"/>
 {{/if}}
 </button>
