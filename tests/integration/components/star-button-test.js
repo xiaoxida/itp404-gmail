@@ -1,9 +1,7 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render, click, waitUntil, find} from '@ember/test-helpers';
+import { render,} from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { resolve, Promise } from 'rsvp';
-import { later } from '@ember/runloop';
 
 module('Integration | Component | star-button', function(hooks) {
   setupRenderingTest(hooks);

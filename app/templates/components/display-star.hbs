@@ -1,7 +1,7 @@
 <li>
   <StarButton
-  @starred={{@email.isStarred}}
-  @onClick={{action "star" @email}}
+    @starred={{@email.isStarred}}
+    @onClick={{action "star" @email}}
   />
   {{#link-to "detail" @email.id}}
     {{@email.from}}
