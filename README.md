@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/xiaoxida/itp404-gmail.svg?branch=master)](https://travis-ci.org/xiaoxida/itp404-gmail)
+
 # itp404-assignment4
 
 This README outlines the details of collaborating on this Ember application.
