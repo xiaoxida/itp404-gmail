@@ -4,7 +4,6 @@ export function truncateText(params/*, hash*/) {
   let myString = JSON.stringify(params[0]);
   if(myString.length > parseInt(params[1]))
   {
-    console.log(myString);
     return myString.substring(1, parseInt(params[1]) + 1) + "...";
   }
   else {
